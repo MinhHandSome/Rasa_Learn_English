@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sothi\"}}]": "utter_sothi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sothi\"}}, {\"prev_action\": {\"action_name\": \"utter_sothi\"}, \"user\": {\"intent\": \"sothi\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}]": "utter_thiquakhutiepdien",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhutiepdien\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}]": "utter_thiquakhuhoanthanh",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhuhoanthanh\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhudon\"}}]": "utter_thiquakhudon",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhudon\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhudon\"}, \"user\": {\"intent\": \"thiquakhudon\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greets\"}}]": "utter_greets",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greets\"}}, {\"prev_action\": {\"action_name\": \"utter_greets\"}, \"user\": {\"intent\": \"greets\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}]": "utter_thiquakhuhoanthanhtiepdien",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhuhoanthanhtiepdien\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greets\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sothi\"}}, {\"prev_action\": {\"action_name\": \"utter_sothi\"}, \"user\": {\"intent\": \"sothi\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greets\"}}, {\"prev_action\": {\"action_name\": \"utter_greets\"}, \"user\": {\"intent\": \"greets\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhutiepdien\"}, \"user\": {\"intent\": \"thiquakhutiepdien\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhudon\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sothi\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhuhoanthanh\"}, \"user\": {\"intent\": \"thiquakhuhoanthanh\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhudon\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhudon\"}, \"user\": {\"intent\": \"thiquakhudon\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}, {\"prev_action\": {\"action_name\": \"utter_thiquakhuhoanthanhtiepdien\"}, \"user\": {\"intent\": \"thiquakhuhoanthanhtiepdien\"}}]"
+    ]
+  }
+}

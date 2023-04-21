@@ -1,0 +1,222 @@
+version: "3.1"
+
+nlu:
+- intent: greets
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào
+    - xin chào
+    - chào bot
+    - có ai ở đó không
+    - tôi cần hỗ trợ
+    - Chào bạn
+    - Chào anh
+    - Chào chị
+    - Chào buổi sáng
+    - Có đó không
+    - Rãnh không
+    - Ê
+    - Hú
+    - chào em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - g9
+    - good night
+    - bye bye
+    - tạm biệt
+    - Hẹn gặp lại
+    - Ngủ ngon
+    - Chúc ngủ ngon
+    - Nói chuyện sau nhé
+    - Tôi sẽ liên hệ sau
+    - tạm biệt em
+    - tạm biệt bot nhá
+    - Biến
+- intent: sothi
+  examples: |
+    - có bao nhiêu thì trong tiếng anh?
+    - tổng cộng có bao nhiêu thì?
+    - có bao nhiêu thì?
+#past tense
+- intent: thiquakhudon
+  examples: |
+    - thì quá khứ là gì?
+    - thì quá khứ
+    - định nghĩa thì quá khứ?
+    - cấu trúc của thì quá khứ
+    - thì quá khứ mô tả điều gì ?
+    - past simple 
+- intent: thiquakhutiepdien
+  examples: |
+    - thì quá khứ tiếp diễn là gì?
+    - thì quá khứ tiếp diễn
+    - định nghĩa thì quá khứ tiếp diễn?
+    - cấu trúc của thì quá khứ tiếp diễn
+    - thì quá khứ tiếp diễn mô tả điều gì ?
+    - past Continuous
+- intent: thiquakhuhoanthanh
+  examples: |
+    - thì quá khứ hoàn thành là gì?
+    - thì quá khứ hoàn thành
+    - định nghĩa thì quá khứ honaf thành ?
+    - cấu trúc của thì quá khứ hoàn thành
+    - thì quá khứ hoàn thành mô tả điều gì ?
+
+- intent: thiquakhuhoanthanhtiepdien
+  examples: |
+    - thì quá khứ hoàn thành tiếp diễn là gì?
+    - thì quá khứ quá khứ hoàn thành tiếp diễn
+    - định nghĩa thì quá khứ hoàn thành tiếp diễn?
+    - cấu trúc của thì quá khứ hoàn thành tiếp diễn
+    - thì quá khứ hoàn thành tiếp diễn mô tả điều gì ?
+
+
+#Present Tense
+- intent: thihientaidon
+  examples: |
+    - thì hiện tại đơn là gì?
+    - thì hiện tại đơn
+    - định nghĩa thì hiện tại đơn ?
+    - cấu trúc của thì hiện tại đơn
+    - thì hiện tại đơn diễn tả điều gì ?
+- intent: thihientaitiepdien
+  examples: |
+    - thì hiện tại tiếp diễn là gì?
+    - thì hiện tại tiếp diễn
+    - định nghĩa thì hiện tại tiếp diễn ?
+    - cấu trúc của thì hiện tại tiếp diễn
+    - thì hiện tại tiếp diễn mô tả điều gì ?
+- intent: thihientaihoanthanh
+  examples: |
+    - thì hiện tại hoàn thành là gì?
+    - thì hiện tại hoàn thành
+    - định nghĩa thì hiện tại hoàn thành ?
+    - cấu trúc của thì hiện tại hoàn thành
+    - thì hiện tại hoàn thành mô tả điều gì ?
+- intent: thihientaihoanthanhtiepdien
+  examples: |
+    - thì hiện tại hoàn thành tiếp diễn là gì?
+    - thì hiện tại hoàn thành tiếp diễn
+    - định nghĩa thì hiện tại hoàn thành tiếp diễn ?
+    - cấu trúc của thì hiện tại hoàn thành tiếp diễn
+    - thì hiện tại hoàn thành tiếp diễn mô tả điều gì ? 
+#future tense
+- intent: thituonglaidon
+  examples: |
+    - thì tương lai đơn là gì?
+    - thì tương lai đơn
+    - định nghĩa thì tương lai đơn ?
+    - cấu trúc của thì tương lai đơn
+    - thì tương lai đơn diễn tả điều gì ?
+- intent: thitươnglaitiepdien
+  examples: |
+    - thì tương lai tiếp diễn là gì?
+    - thì tương lai tiếp diễn
+    - định nghĩa thì tương lai tiếp diễn ?
+    - cấu trúc của thì tương lai tiếp diễn
+    - thì tương lai tiếp diễn mô tả điều gì ?
+- intent: thituonglaihoanthanh
+  examples: |
+    - thì tương lai hoàn thành là gì?
+    - thì tương lai hoàn thành
+    - định nghĩa thì tương lai hoàn thành ?
+    - cấu trúc của thì tương lai hoàn thành
+    - thì tương lai hoàn thành mô tả điều gì ?
+- intent: thituonglaihoanthanhtiepdien
+  examples: |
+    - thì tương lai hoàn thành tiếp diễn là gì?
+    - thì tương lai hoàn thành tiếp diễn
+    - định nghĩa thì tương lai hoàn thành tiếp diễn ?
+    - cấu trúc của thì tương lai hoàn thành tiếp diễn
+    - thì tương lai hoàn thành tiếp diễn mô tả điều gì ? 
+
+# câu chủ động câu bị động
+- intent: cauchubidong
+  examples: |
+    - câu chủ động là gì?
+    - câu bị động là gì?
+    - câu chủ động và bị động?
+    - sự khác biệt giữa câu chủ động và câu bị động?
+  
+# learn English
+- intent: ask_learn_English
+  examples: |
+    - Tôi muốn học tiếng anh
+    - Học tiếng anh
+    - Một số cách học tiếng anh hiệu quả
+    - Học tiếng anh từ đầu
+    - Tiếng anh
+  #skill
+- intent: ask_skill_English
+  examples: |
+    - Kỹ năng
+    - Các kỹ năng cần thiết trong tiếng anh?
+    - Cần kỹ năng gì để thành thạo tiếng anh?
+#grammar basic 
+- intent: ask_grammar_basic_English
+  examples: |
+    - Học ngữ pháp cơ bản
+    - Cần học ngữ pháp từ số 0
+    - Cần học gì để biết ngữ pháp trong tiếng anh 
+#conditional sentences
+- intent: conditional_sentences
+  examples: | 
+    - Câu điều kiện là gì?
+    - Có bao nhiêu câu điều kiện?
+    - Khái niệm của câu điều kiện?
+    - Câu điều kiện?
+    - Định nghĩa của câu điều kiện?
+    - Câu điều kiện trong tiếng anh?
+#conditional sentence structure
+- intent: conditional_sentence_structure
+  examples: |
+    - Cấu trúc của câu điều kiện
+    - Cấu trúc của câu điều kiện là gì
+    - Nêu các trúc của câu điều kiện?
+    - Cấu trúc của 3 câu điều kiện
+    - Cấu trúc của từng câu điều kiện
+ # first conditional sentence
+# - intent: first_conditional_sentence
+#   example: |
+#     - Câu điều kiện loại 1 là gì
+#     - Cấu trúc của câu điều kiện loại 1
+#     - Khái niệm của câu điều kiện loại 1
+#     - Khái niệm và cấu túc của câu điều kiện loại 1
+- intent: ask_pronoun #đại từ
+  examples: |
+    - Đại từ
+    - Đại từ trong tiếng Anh
+    - Pronoun
+    - Đại từ là gì
+    - khái niệm là đại từ
+
+- intent: ask_noun #đại từ
+  examples: |
+    - Danh từ
+    - Danh từ trong tiếng Anh
+    - Noun
+    - Danh từ là gì
+    - Thế nào là danh từ 
+
+- intent: ask_adjective
+  examples: |
+   - Tinh từ 
+   - Tính từ trong tiếng Anh là gì?
+   - adjective
+   - Tính từ là gì
+   - Khái niệm về tính từ 
+- intent: ask_verb
+  examples: |
+   - Động từ
+   - Động từ trong tiếng Anh là gì?
+   - Verb
+   - Động từ là gì
+   - Khái niệm về động từ 

@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - greets
+  - goodbye
+  - sothi
+  - thiquakhudon
+  - thiquakhutiepdien 
+  - thiquakhuhoanthanh
+  - thiquakhuhoanthanhtiepdien
+  - thihientaidon
+  - thihientaitiepdien
+  - thihientaihoanthanh 
+  - thihientaihoanthanhtiepdien 
+  - thituonglaidon 
+  - thitươnglaitiepdien 
+  - thituonglaihoanthanh
+  - thituonglaihoanthanhtiepdien 
+  - cauchubidong
+  - ask_learn_English
+  - ask_skill_English 
+  - ask_grammar_basic_English
+  - conditional_sentences
+  - conditional_sentence_structure
+  - ask_pronoun
+  - ask_noun
+  - ask_adjective
+  - ask_verb
+responses:
+  utter_greets:
+  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Tạm biệt bạn!"
+  - text: "Tạm biệt!\nHẹn gặp lại!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_sothi:
+  - text: "Có 12 thì trong tiếng Anh, được chia thành 3 nhóm chính:thì hiện tại(đơn,tiếp diễn,hoàn thành,hoàn thành tiếp diễn), thì quá khứ(đơn,tiếp diễn,hoàn thành,hoàn thành tiếp diễn),thì tương lai(đơn,tiếp diễn,hoàn thành,hoàn thành tiếp diễn) "
+  - text: "có 12 thì trong tiếng anh" 
+  utter_thiquakhudon:
+  - text: "Thì quá khứ đơn (Past Simple) trong tiếng Anh là thì diễn tả một hành động xảy ra hoặc đã hoàn thành ở quá khứ. Thường được sử dụng để miêu tả những sự kiện, hành động hoặc tình huống đã xảy ra ở một thời điểm xác định trong quá khứ, có câu trúc là :S + V2/ed + O"
+  - text: "thì quá khứ đơn diễn tả 1 hành động xảy ra hoặc đã hoàn thành ở quá khứ. Cấu chúc: S + V2/ed + O"
+  utter_thiquakhutiepdien:
+  - text: "Thì quá khứ tiếp diễn (Past Continuous) trong tiếng Anh được sử dụng để diễn tả một hành động đang diễn ra trong quá khứ và có thể bị gián đoạn bởi một hành động khác. Thì này thường được sử dụng để miêu tả một hành động xảy ra trong một khoảng thời gian cụ thể trong quá khứ, hoặc khi muốn diễn tả một hành động đang diễn ra và kéo dài trong một thời gian ngắn.\n Cấu trúc là  S + was/were + V-ing + O"
+  - text: "Thì quá khứ tiếp diễn thường được sử dụng với thì quá khứ đơn (Past Simple) để miêu tả một hành động đang diễn ra trong quá khứ, hoặc khi một hành động khác xảy ra trong khi hành động đang diễn ra.\nCấu trúc: S + was/were + V-ing + O \n Ví dụ: I was studying when my friend came to visit me"
+  utter_thiquakhuhoanthanh:
+  - text: "Thì quá khứ hoàn thành (Past Perfect) trong tiếng Anh được sử dụng để diễn tả một hành động đã hoàn thành trước một hành động khác trong quá khứ. Thì này thường được sử dụng để miêu tả một hành động xảy ra trước một thời điểm xác định trong quá khứ, hoặc khi muốn diễn tả một trình tự các hành động xảy ra trong quá khứ.\n Cấu trúc S + Had + V3/ed + O"
+  - text : "Thường thì, thì quá khứ hoàn thành được sử dụng với 'by the time' hoặc 'before' để diễn tả một hành động đã hoàn thành trước một thời điểm cụ thể trong quá khứ. Ví dụ: By the time I arrived, they had already left. Hoặc được sử dụng để miêu tả một hành động đã hoàn thành trước một hành động khác trong quá khứ.\n Cấu trúc: S + Had + V3/ed + O.\n  Ví dụ: After I had finished my work, I went for a walk."
+  utter_thiquakhuhoanthanhtiepdien:
+  - text : "Thì quá khứ hoàn thành tiếp diễn (Past Perfect Continuous) trong tiếng Anh được sử dụng để diễn tả một hành động đã bắt đầu và đang tiếp diễn trong quá khứ trước khi một hành động khác xảy ra.\n Cấu trúc:S + Had been + V-ing + O"
+  - text : "Thì này thường được sử dụng để miêu tả một hành động đã bắt đầu trước một thời điểm xác định trong quá khứ và tiếp diễn đến một thời điểm khác trong quá khứ.\n Cấu trúc:S + Had been + V-ing + O.\n Ví dụ: I had been studying English for several years before I moved to an English-speaking country."
+  utter_thihientaidon:
+  - text: "Thì hiện tại đơn là thì trong ngữ pháp tiếng Việt để diễn tả một hành động, một sự việc đang diễn ra hoặc đang tồn tại vào thời điểm hiện tại. Thường được tạo thành bằng cách thêm động từ 'đang' hoặc 'là' vào trước động từ nguyên thể.\nCấu trúc: S + V(s/es) + O"
+  - text : "Hiện tại đơn mô tả sự thật hiển nhiên xảy ra./n Cấu trúc: S + V(s/es) + O"
+  utter_thihientaitiepdien:
+  - text: "Thì hiện tại tiếp diễn (Present Continuous) trong tiếng Anh được sử dụng để diễn tả một hành động đang diễn ra vào thời điểm hiện tại. Thì này thường được sử dụng để miêu tả một hành động đang diễn ra trong thời điểm nói chuyện, hoặc để diễn tả một hành động đang diễn ra trong một khoảng thời gian ngắn xung quanh thời điểm nói chuyện.\nCấu trúc: S+S + am/is/are + V-ing + O"
+  utter_thihientaihoanthanh:
+  - text: "Thì hiện tại hoàn thành (Present Perfect) trong tiếng Anh được sử dụng để diễn tả một hành động đã xảy ra trong quá khứ và vẫn còn ảnh hưởng đến thời điểm hiện tại, hoặc để diễn tả một hành động đã xảy ra trong quá khứ nhưng thời điểm xác định không rõ ràng.\nCấu trúc: S + have/has + V3/ed + O"
+  utter_thihientaihoanthanhtiepdien:
+  - text: "Thì hiện tại hoàn thành tiếp diễn (Present Perfect Continuous) trong tiếng Anh được sử dụng để diễn tả một hành động đã bắt đầu trong quá khứ và vẫn đang tiếp diễn đến hiện tại, hoặc để diễn tả một hành động đã xảy ra trong quá khứ nhưng vẫn còn ảnh hưởng đến thời điểm hiện tại.\nCấu trúc:S + have/has + been + V-ing + O"
+  utter_thituonglaidon:
+  - text: "Thì tương lai đơn (Simple Future Tense) trong tiếng Anh được sử dụng để diễn tả một hành động hoặc sự kiện sẽ xảy ra trong tương lai.\nCấu trúc: S + will/shall + V-inf + O"
+  utter_thitươnglaitiepdien:
+  - text: "Thì tương lai tiếp diễn (Future Continuous Tense) trong tiếng Anh được sử dụng để diễn tả một hành động đang diễn ra tại một thời điểm trong tương lai hoặc để diễn tả một hành động đang tiếp diễn tại một thời điểm xác định trong tương lai.\nCấu trúc:  S + will/shall + be + V-ing + O"
+  utter_thituonglaihoanthanh:
+  - text: "Thì tương lai hoàn thành (Future Perfect Tense) trong tiếng Anh được sử dụng để diễn tả một hành động sẽ hoàn thành tại một thời điểm xác định trong tương lai. Thường được sử dụng để nói về một hành động sẽ kết thúc trước một hành động khác xảy ra trong tương lai.\nCấu trúc: S + will/shall + have + V3/ed + O" 
+  utter_thituonglaihoanthanhtiepdien:
+  - text: "Thì tương lai hoàn thành tiếp diễn (Future Perfect Continuous Tense) trong tiếng Anh được sử dụng để diễn tả một hành động sẽ bắt đầu trước một thời điểm xác định trong tương lai và vẫn đang tiếp diễn cho đến khi đến thời điểm đó. Thông thường, thì này được sử dụng để mô tả một hành động sẽ tiếp tục trong một khoảng thời gian dài và kết thúc tại một thời điểm cụ thể trong tương lai.\nCấu trúc: S + will/shall + have + been + V-ing + O"
+  #câu chủ động và câu bị đông
+  utter_cauchubidong:
+  - text: "Trong tiếng Anh, câu chủ động và câu bị động là hai cách diễn đạt khác nhau về cách thức hành động diễn ra trong câu.\nCâu chủ động (Active Voice) là câu mà chủ ngữ (Subject) thực hiện hành động đến đối tượng (Object) trong câu. Ví dụ: 'She eats an apple' (Cô ấy ăn một quả táo). Trong câu này, chủ ngữ 'She' là người thực hiện hành động 'eats' đến đối tượng 'an apple'.\nCâu bị động (Passive Voice) là câu mà đối tượng (Object) trong câu trở thành chủ ngữ (Subject) và không thực hiện hành động, mà hành động được thực hiện lên đối tượng bởi chủ ngữ hoặc bởi một người nào đó khác. Ví dụ: 'An apple is eaten by her' (Một quả táo bị ăn bởi cô ấy). Trong câu này, đối tượng 'an apple' trở thành chủ ngữ 'An apple', và hành động 'is eaten' được thực hiện lên đối tượng này bởi chủ ngữ hoặc bởi một người khác."
+  #learn english
+  utter_ask_learn_English:
+  - text: "Có rất nhiều cách học tiếng anh hiệu quả như: Học từ cơ bản (bảng chữ cái, số đếm, các từ),\nhọc phát âm, học từ mới,\nxem và nghe Tiếng Anh,\nsử dụng tài liệu tiếng anh tren mạng,\nluyện tập với người bản xứ"
+  #skill english
+  utter_ask_skill_English:
+  - text: "Các kỹ năng cơ bản để thành thạo tiếng Anh : Nghe (Listening) , Nói(Speaking) , Đọc(Reading) , Viết(Writting)"
+  #grammar english
+  utter_grammar_basic_English:
+  - text: "Để nắm được ngữ pháp đơn giản trong tiếng Anh bạn cần phải học những thứ cơ bản sau:12 thì trong tiếng Anh cơ bản, Ngữ pháp về các loại từ, cấu trúc trong câu tiếng Anh, các dạng câu hỏi"
+  utter_conditinal_sentences:
+  - text: "Câu điều kiện trong tiếng Anh (Conditional sentences) là câu mô tả một điều kiện và hành động kết quả sẽ xảy ra nếu điều kiện đó được đáp ứng. Câu điều kiện bao gồm 2 phần: mệnh đề điều kiện (if-clause) và mệnh đề kết quả (main clause).\nCó ba loại câu điều kiện chính trong tiếng Anh:\nCâu điều kiện loại 1 (First conditional): Diễn tả một điều kiện có thể xảy ra trong tương lai hoặc có khả năng xảy ra, và hành động kết quả sẽ xảy ra nếu điều kiện đó đúng.\nVí dụ: If it rains tomorrow, I will stay at home. (Nếu mưa vào ngày mai, tôi sẽ ở nhà)\nCâu điều kiện loại 2 (Second conditional): Diễn tả một điều kiện không có thật hoặc không thể xảy ra ở hiện tại hoặc tương lai, và hành động kết quả sẽ xảy ra nếu điều kiện đó là đúng.\nVí dụ: If I had a lot of money, I would travel around the world. (Nếu tôi có nhiều tiền, tôi sẽ đi du lịch khắp thế giới)\nCâu điều kiện loại 3 (Third conditional): Diễn tả một điều kiện không có thật trong quá khứ, và hành động kết quả không thể xảy ra vì điều kiện đã không được đáp ứng.\nVí dụ: If I had studied harder, I would have passed the exam. (Nếu tôi học chăm chỉ hơn, tôi đã đậu kỳ thi đó)"
+  utter_conditional_sentence_structure:
+  -  text: "Dưới đây là cấu trúc của ba loại câu điều kiện trong tiếng Anh:\nCâu điều kiện loại 1 (First conditional):\nMệnh đề điều kiện: If + chủ ngữ + động từ nguyên mẫu\nMệnh đề kết quả: will/shall + động từ nguyên mẫu\nVí dụ: If it rains tomorrow, I will stay at home. (Nếu mưa vào ngày mai, tôi sẽ ở nhà)\nCâu điều kiện loại 2 (Second conditional):\nMệnh đề điều kiện: If + S + V2 (quá khứ đơn)\nMệnh đề kết quả: would/should + V (nguyên mẫu)\nVí dụ: If I had a lot of money, I would travel around the world. (Nếu tôi có nhiều tiền, tôi sẽ đi du lịch khắp thế giới)\nCâu điều kiện loại 3 (Third conditional):\nMệnh đề điều kiện: If + S + had + V3 (quá khứ phân từ)\nMệnh đề kết quả: would/should/could + have + V3 (quá khứ phân từ)\nVí dụ: If I had studied harder, I would have passed the exam. (Nếu tôi học chăm chỉ hơn, tôi đã đậu kỳ thi đó)"
+  utter_ask_pronoun:
+  - text: "Đại từ trong tiếng Anh (Pronoun) là các từ có thể thay thế cho danh từ trong câu, tránh sự từ. Các loại đại từ trong tiếng Anh cơ bản nhất mà bạn cần nắm được là: Đại từ nhân xưng (Personal pronouns), đại từ sở hữu (Possessive pronoun), đại từ quan hệ (relative pronouns) và đại từ nghi vấn (interrogative pronouns)."
+  utter_ask_noun:
+  - text: "Danh từ - Noun dùng để chỉ sự vật, sự việc, con người. Danh từ có thể được sử dụng trong câu với những vị trí khác nhau như chủ ngữ, tân ngữ. Có nhiều loại danh từ trong tiếng Anh như: danh từ chung - danh từ riêng; danh từ ghép, danh từ tập hợp; danh từ trừu tượng; …"
+  utter_ask_adjective:
+  - text: "Tính từ là những từ được dùng để miêu tả tính chất của danh từ chỉ sự vật, hiện tượng mà nó nhắm đến. Tính từ thường đứng trước 1 danh từ trong câu và bổ nghĩa cho từ đó. \n Ví dụ: \n Katty is a beautiful girl: Katty là một cô gái xinh đẹp: → 'beautiful - xinh đẹp' miêu tả danh từ chỉ người 'Katty'.→ beautiful đứng trước danh từ girl, bổ nghĩa cho girl"
+  utter_ask_verb:
+  - text: "Động từ là 1 từ hoặc 1 cụm các từ chỉ ra hành động, trạng thái hoặc tình trạng của chủ ngữ trong câu. Động từ có thể được coi là thành phần cốt lõi nhất trong 1 câu. Động từ đứng sau chủ ngữ, sau các trạng từ chỉ tần suất và trước tân ngữ.\nVí dụ:\n My brother often eats apples for breakfast.\n→ Động từ 'eat' trong câu này đứng sau chủ ngữ 'my brother' và trạng từ chỉ tần suất 'often', đứng trước tân ngữ 'apples'"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

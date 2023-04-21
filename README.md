@@ -1,2 +1,2 @@
-# Rasa
- Chat bot
+# build app
+# rasa run --cors "*"

@@ -1,0 +1,114 @@
+version: "3.1"
+
+rules:
+- rule: Chào hỏi
+  steps:
+  - intent: greets
+  - action: utter_greets
+#số thì
+- rule : sothi
+  steps:
+  - intent: sothi
+  - action: utter_sothi
+# thì quá khứ
+- rule : thiquakhudon
+  steps:
+  - intent: thiquakhudon
+  - action: utter_thiquakhudon
+- rule : thiquakhutiepdien
+  steps:
+  - intent: thiquakhutiepdien
+  - action: utter_thiquakhutiepdien
+- rule : thiquakhuhoanthanh
+  steps:
+  - intent: thiquakhuhoanthanh
+  - action: utter_thiquakhuhoanthanh
+- rule : thiquakhuhoanthanhtiepdien
+  steps:
+  - intent: thiquakhuhoanthanhtiepdien
+  - action: utter_thiquakhuhoanthanhtiepdien  
+#hiện tại
+- rule : thihientaidon
+  steps:
+  - intent: thihientaidon
+  - action: utter_thihientaidon
+- rule : thihientaitiepdien
+  steps:
+  - intent: thihientaitiepdien
+  - action: utter_thihientaitiepdien
+- rule : thihientaihoanthanh
+  steps:
+  - intent: thihientaihoanthanh
+  - action: utter_thihientaihoanthanh  
+- rule : thihientaihoanthanhtiepdien
+  steps:
+  - intent: thihientaihoanthanhtiepdien
+  - action: utter_thihientaihoanthanhtiepdien
+# tương lai
+- rule : thituonglaidon
+  steps:
+  - intent: thituonglaidon
+  - action: utter_thituonglaidon  
+- rule : thitươnglaitiepdien
+  steps:
+  - intent: thitươnglaitiepdien
+  - action: utter_thitươnglaitiepdien  
+- rule : thituonglaihoanthanh
+  steps:
+  - intent: thituonglaihoanthanh
+  - action: utter_thituonglaihoanthanh
+- rule : thituonglaihoanthanhtiepdien
+  steps:
+  - intent: thituonglaihoanthanhtiepdien
+  - action: utter_thituonglaihoanthanhtiepdien  
+#Câu chủ động và câu bị động
+- rule : cauchubidong 
+  steps:
+  - intent: cauchubidong 
+  - action: utter_cauchubidong 
+# learn engslish
+- rule : ask_learn_English
+  steps:
+  - intent: ask_learn_English
+  - action : utter_ask_learn_English
+#skill english
+- rule: ask_skill_English
+  steps:
+  - intent: ask_skill_Englishs
+  - action: utter_ask_skill_English
+# grammar english
+- rule: ask_grammar_basic_English
+  steps:
+  - intent: ask_grammar_basic_English
+  - action: utter_grammar_basic_English
+# conditional_sentences
+- rule: conditional_sentences
+  steps:
+  - intent: conditional_sentences
+  - action: utter_conditinal_sentences
+#conditional_sentenc_structure
+- rule: conditional_sentence_structure
+  steps:
+  - intent: conditional_sentence_structure
+  - action: utter_conditional_sentence_structure
+#
+- rule: ask_pronoun
+  steps:
+  - intent: ask_pronoun
+  - action: utter_ask_pronoun
+- rule: ask_noun
+  steps:
+  - intent: ask_noun
+  - action: utter_ask_noun
+- rule: ask_adjective
+  steps:
+  - intent: ask_adjective
+  - action: utter_ask_adjective
+- rule: ask_verb
+  steps:
+  - intent: ask_verb
+  - action: utter_ask_verb
+- rule: Tạm biệt
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
