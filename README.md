@@ -1,2 +1,2 @@
-# build app
+# run code:
 # rasa run --cors "*"
