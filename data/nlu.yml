@@ -190,6 +190,7 @@ nlu:
 #     - Cấu trúc của câu điều kiện loại 1
 #     - Khái niệm của câu điều kiện loại 1
 #     - Khái niệm và cấu túc của câu điều kiện loại 1
+
 - intent: ask_pronoun #đại từ
   examples: |
     - Đại từ
@@ -198,7 +199,35 @@ nlu:
     - Đại từ là gì
     - khái niệm là đại từ
 
-- intent: ask_noun #đại từ
+- intent: ask_pronoun_personal #đại từ nhân xưng
+  examples: |
+    - đại từ nhân xưng là gì?
+    - Khái niệm về đại từ nhân xưng
+    - Thế nào là đại từ nhân xưng?
+    - Personal pronouns là gì
+
+- intent: ask_pronoun_possessive #đại từ sở hữu
+  examples: |
+    - Thế nào là đại từ sở hữu?
+    - Đinh nghĩa về đại từ sở hữu?
+    - Possessive pronoun là gì?
+    - Thế nào là Possessive pronoun?
+
+- intent: ask_pronoun_relative #đại từ quan hệ
+  examples: |
+    - Thế nào là đại từ quan hệ?
+    - Đại từ quan hẹ là gì?
+    - relative pronouns là gì?
+    - giới thiệu về relative pronouns?
+
+- intent: ask_pronoun_interrogative #đại từ nghi vấn
+  examples: |
+    - Thế nào là đại từ nghi vấn?
+    - Khái niệm về đại từ nghi vấn?
+    - interrogative pronouns là gì?
+    - giới thiệu về interrogative pronouns?
+
+- intent: ask_noun #danh từ
   examples: |
     - Danh từ
     - Danh từ trong tiếng Anh
@@ -377,3 +406,22 @@ nlu:
 
 - intent: ask_conjunctions_subordinating # liên từ phụ thuộc
   examples: |
+    - Liên từ phụ thuộc là gì?
+    - Ví dụ về liên từ phụ thuộc
+    - Thế nào là liên từ phụ thuộc?
+    - Khái niệm về liên từ phụ thuộc?
+    - conjunctions subordinating
+
+- intent: ask_conjunctions_coordinating # liên từ kết hợp
+  examples: |
+    - Liên từ kết hợp trong tiếng Anh là gì?
+    - Thế nào là liên từ  kết hợp?
+    - Coordinating Conjunctions là gì?
+    - Định nghĩa liên từ  kết hợp?
+
+- intent: ask_conjunctions_correlative # liên từ tương quan
+  examples: |
+    - Liên từ tương quan là gì?
+    - Khái niệm về liên từ tương quan
+    - Correlative conjunction là gì?
+    - Định nghĩa liên từ tương quan

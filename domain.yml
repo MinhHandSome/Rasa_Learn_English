@@ -22,9 +22,17 @@ intents:
   - ask_grammar_basic_English
   - conditional_sentences
   - conditional_sentence_structure
+  #đại từ
   - ask_pronoun
+  - ask_pronoun_personal
+  - ask_pronoun_possessive
+  - ask_pronoun_relative
+  - ask_pronoun_interrogative
+  #danh từ
   - ask_noun
+  #tính từ
   - ask_adjective
+  #động từ
   - ask_verb
   #trạng từ (adverb)
   - ask_adverb
@@ -49,6 +57,9 @@ intents:
   - ask_article
   # liên từ (conjunctions)
   - ask_conjunctions
+  - ask_conjunctions_subordinating # liên từ phụ thuộc
+  - ask_conjunctions_coordinating # liên tù ket hop
+  - ask_conjunctions_correlative # liên từ tương quan
 responses:
   utter_greets:
   - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
@@ -111,8 +122,23 @@ responses:
   - text: "Câu điều kiện trong tiếng Anh (Conditional sentences) là câu mô tả một điều kiện và hành động kết quả sẽ xảy ra nếu điều kiện đó được đáp ứng. Câu điều kiện bao gồm 2 phần: mệnh đề điều kiện (if-clause) và mệnh đề kết quả (main clause).\nCó ba loại câu điều kiện chính trong tiếng Anh:\nCâu điều kiện loại 1 (First conditional): Diễn tả một điều kiện có thể xảy ra trong tương lai hoặc có khả năng xảy ra, và hành động kết quả sẽ xảy ra nếu điều kiện đó đúng.\nVí dụ: If it rains tomorrow, I will stay at home. (Nếu mưa vào ngày mai, tôi sẽ ở nhà)\nCâu điều kiện loại 2 (Second conditional): Diễn tả một điều kiện không có thật hoặc không thể xảy ra ở hiện tại hoặc tương lai, và hành động kết quả sẽ xảy ra nếu điều kiện đó là đúng.\nVí dụ: If I had a lot of money, I would travel around the world. (Nếu tôi có nhiều tiền, tôi sẽ đi du lịch khắp thế giới)\nCâu điều kiện loại 3 (Third conditional): Diễn tả một điều kiện không có thật trong quá khứ, và hành động kết quả không thể xảy ra vì điều kiện đã không được đáp ứng.\nVí dụ: If I had studied harder, I would have passed the exam. (Nếu tôi học chăm chỉ hơn, tôi đã đậu kỳ thi đó)"
   utter_conditional_sentence_structure:
   -  text: "Dưới đây là cấu trúc của ba loại câu điều kiện trong tiếng Anh:\nCâu điều kiện loại 1 (First conditional):\nMệnh đề điều kiện: If + chủ ngữ + động từ nguyên mẫu\nMệnh đề kết quả: will/shall + động từ nguyên mẫu\nVí dụ: If it rains tomorrow, I will stay at home. (Nếu mưa vào ngày mai, tôi sẽ ở nhà)\nCâu điều kiện loại 2 (Second conditional):\nMệnh đề điều kiện: If + S + V2 (quá khứ đơn)\nMệnh đề kết quả: would/should + V (nguyên mẫu)\nVí dụ: If I had a lot of money, I would travel around the world. (Nếu tôi có nhiều tiền, tôi sẽ đi du lịch khắp thế giới)\nCâu điều kiện loại 3 (Third conditional):\nMệnh đề điều kiện: If + S + had + V3 (quá khứ phân từ)\nMệnh đề kết quả: would/should/could + have + V3 (quá khứ phân từ)\nVí dụ: If I had studied harder, I would have passed the exam. (Nếu tôi học chăm chỉ hơn, tôi đã đậu kỳ thi đó)"
+#Đại từ
   utter_ask_pronoun:
   - text: "Đại từ trong tiếng Anh (Pronoun) là các từ có thể thay thế cho danh từ trong câu, tránh sự từ. Các loại đại từ trong tiếng Anh cơ bản nhất mà bạn cần nắm được là: Đại từ nhân xưng (Personal pronouns), đại từ sở hữu (Possessive pronoun), đại từ quan hệ (relative pronouns) và đại từ nghi vấn (interrogative pronouns)."
+  
+  utter_ask_pronoun_personal:
+  - text: "Đại từ nhân xưng là các đại từ có thể thay thế cho danh từ trong câu ở các vị trí chủ ngữ hoặc tân ngữ. Đại từ nhân xưng chủ ngữ là: I/You/We/They/He/She/It; đại từ nhân xưng tân ngữ tương ứng là: me/you/us/them/him/her/it."
+
+  utter_ask_pronoun_possessive:
+  - text: "Đại từ sở hữu là các đại từ miêu tả sự sở hữu, dùng các từ này để thay thế cho cụm tính từ sở hữu + danh từ đã xuất hiện trước đó, tránh lặp từ. Các đại từ sở hữu trong tiếng Anh bao gồm: mine/hers/his/theirs/ours/its.\n Ví dụ: Her jacket is black, mine is white. (mine = my jacket)"
+
+  utter_ask_pronoun_relative:
+  - text: " Đại từ quan hệ dùng để kết nối mệnh đề quan hệ và mệnh đề độc lập. Mệnh đề quan hệ có ý nghĩa bổ sung thêm thông tin về một danh từ đã được đề cập tới trong câu. \n Các đại từ quan hệ thường gặp nhất trong tiếng Anh bao gồm: who, whose, whom, which, that,..."
+
+  utter_ask_pronoun_interrogative:
+  - text: "Đại từ nghi vấn là những từ dùng để tạo ra câu hỏi. Các từ này thường đứng đầu câu và miêu tả đối tượng mà câu hỏi hướng đến. Cụ thể như sau : \nWhat → cái gì\nWhom → ai, cái gì\nWhose → của ai\nWhich → cái nào\nWho → ai"
+ 
+#Danh từ 
   utter_ask_noun:
   - text: "Danh từ - Noun dùng để chỉ sự vật, sự việc, con người. Danh từ có thể được sử dụng trong câu với những vị trí khác nhau như chủ ngữ, tân ngữ. Có nhiều loại danh từ trong tiếng Anh như: danh từ chung - danh từ riêng; danh từ ghép, danh từ tập hợp; danh từ trừu tượng; …"
   utter_ask_adjective:
@@ -180,6 +206,20 @@ responses:
   #liên từ
   utter_ask_conjunctions:
   - text: "Liên từ trong tiếng Anh có chức năng dùng để liên kết các cụm từ, các câu hay các đoạn văn. Liên từ được dùng phổ biến trong cả giao tiếp thực tế và trong văn viết. Các loại liên từ chính bao gồm: Liên từ phụ thuộc, Liên từ kết hợp và Liên từ tương quan."
+  
+  utter_ask_conjunctions_subordinating:
+  - text: "Liên từ phụ thuộc nối mệnh đề chính và mệnh đề phụ thuộc trong câu. Mệnh đề phụ thuộc có thể đứng trước hoặc đứng sau mệnh đề chính nhưng luôn được bắt đầu bằng 1 liên từ phụ thuộc. \n Ví dụ về liên từ phụ thuộc gồm: before - after; because - since - as; as long as; …"
+
+  utter_ask_conjunctions_coordinating:
+  - text: "Liên từ kết hợp nối 2 (hoặc nhiều hơn) đơn vị từ tương đương nhau. Ví dụ nối 2 từ vựng, 2 cụm từ, 2 mệnh đề,... Các liên từ kết hợp gồm có: for, and, nor, but, or, yet, so) (F-A-N-B-O-Y-S)"
+
+  utter_ask_conjunctions_correlative:
+  - text: "Liên từ tương quan nối 2 đơn vị từ tương đương với nhau, loại liên từ này luôn đi thành cặp không thể tách rời. Ví dụ như: either - or; neither - nor; not only - but also; both - and;..."
+  
+  
+
+  
+  
 
 session_config:
   session_expiration_time: 60

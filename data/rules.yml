@@ -96,10 +96,32 @@ rules:
   steps:
   - intent: ask_pronoun
   - action: utter_ask_pronoun
+
+- rule: ask_pronoun_personal
+  steps:
+  - intent: ask_pronoun_personal
+  - action: utter_ask_pronoun_personal
+
+- rule: ask_pronoun_possessive
+  steps:
+  - intent: ask_pronoun_possessive
+  - action: utter_ask_pronoun_possessive
+
+- rule: ask_pronoun_relative
+  steps:
+  - intent: ask_pronoun_relative
+  - action: utter_ask_pronoun_relative
+
+- rule: ask_pronoun_interrogative
+  steps:
+  - intent: ask_pronoun_interrogative
+  - action: utter_ask_pronoun_interrogative
+
 - rule: ask_noun
   steps:
   - intent: ask_noun
   - action: utter_ask_noun
+
 - rule: ask_adjective
   steps:
   - intent: ask_adjective
@@ -199,6 +221,21 @@ rules:
   steps:
   - intent: ask_conjunctions
   - action: utter_ask_conjunctions
+
+- rule: ask_conjunctions_subordinating
+  steps:
+  - intent: ask_conjunctions_subordinating
+  - action: utter_ask_conjunctions_subordinating
+
+- rule: ask_conjunctions_coordinating
+  steps:
+  - intent: ask_conjunctions_coordinating
+  - action: utter_ask_conjunctions_coordinating
+
+- rule: ask_conjunctions_correlative 
+  steps:
+  - intent: ask_conjunctions_correlative 
+  - action: utter_ask_conjunctions_correlative 
 
 - rule: Tạm biệt
   steps:
