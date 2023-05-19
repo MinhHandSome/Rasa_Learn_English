@@ -108,6 +108,98 @@ rules:
   steps:
   - intent: ask_verb
   - action: utter_ask_verb
+
+- rule: ask_adverb
+  steps:
+  - intent: ask_adverb
+  - action: utter_ask_adverb
+
+- rule: ask_kind_of_adverb
+  steps:
+  - intent: ask_kind_of_adverb
+  - action: utter_ask_kind_of_adverb
+
+- rule: ask_adverb_of_place
+  steps:
+  - intent: ask_adverb_of_place
+  - action: utter_ask_adverb_of_place
+
+- rule: ask_adverb_of_degree
+  steps:
+  - intent: ask_adverb_of_degree
+  - action: utter_ask_adverb_of_degree
+
+
+- rule: ask_adverb_of_time
+  steps:
+  - intent: ask_adverb_of_time
+  - action: utter_ask_adverb_of_time
+
+- rule: ask_adverb_of_manner
+  steps:
+  - intent: ask_adverb_of_manner
+  - action: utter_ask_adverb_of_manner
+
+- rule: ask_adverb_of_frequency
+  steps:
+  - intent: ask_adverb_of_frequency
+  - action: utter_ask_adverb_of_frequency
+
+- rule: ask_quantities
+  steps:
+  - intent: ask_quantities
+  - action: utter_ask_quantities
+
+- rule: ask_quantities_few_and_a_few
+  steps:
+  - intent: ask_quantities_few_and_a_few
+  - action: utter_ask_quantities_few_and_a_few
+
+- rule: ask_quantities_some_and_any
+  steps:
+  - intent: ask_quantities_some_and_any
+  - action: utter_ask_quantities_some_and_any
+
+- rule: ask_quantities_much_and_many
+  steps:
+  - intent: ask_quantities_much_and_many
+  - action: utter_ask_quantities_much_and_many
+
+- rule: ask_quantities_little_and_a_little
+  steps:
+  - intent: ask_quantities_little_and_a_little
+  - action: utter_ask_quantities_little_and_a_little
+
+- rule: ask_preposition
+  steps:
+  - intent: ask_preposition
+  - action: utter_ask_preposition
+
+- rule: ask_preposition_of_place
+  steps:
+  - intent: ask_preposition_of_place
+  - action: utter_ask_preposition_of_place
+
+- rule: ask_preposition_of_time
+  steps:
+  - intent: ask_preposition_of_time
+  - action: utter_ask_preposition_of_time
+
+- rule: ask_preposition_of_direction
+  steps:
+  - intent: ask_preposition_of_direction
+  - action: utter_ask_preposition_of_direction
+
+- rule: ask_article
+  steps:
+  - intent: ask_article
+  - action: utter_ask_article
+
+- rule: ask_conjunctions
+  steps:
+  - intent: ask_conjunctions
+  - action: utter_ask_conjunctions
+
 - rule: Tạm biệt
   steps:
   - intent: goodbye

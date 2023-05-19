@@ -206,17 +206,174 @@ nlu:
     - Danh từ là gì
     - Thế nào là danh từ 
 
-- intent: ask_adjective
+- intent: ask_adjective # tính tu
   examples: |
    - Tinh từ 
    - Tính từ trong tiếng Anh là gì?
    - adjective
    - Tính từ là gì
    - Khái niệm về tính từ 
-- intent: ask_verb
+
+- intent: ask_verb # dong tu
   examples: |
    - Động từ
    - Động từ trong tiếng Anh là gì?
    - Verb
    - Động từ là gì
    - Khái niệm về động từ 
+
+- intent: ask_adverb #trạng từ
+  examples: |
+    - trạng từ là gì?
+    - khái niệm về trạng từ trong tiếng Anh
+    - Adverb là gì?
+    - thế nào là trạng từ?
+    - tìm hiểu về trạng từ?
+
+- intent: ask_kind_of_adverb # loại trạng từ
+  examples: |
+    - Các loai trạng từ 
+    - Có bao nhiêu loại trạng từ?
+    - Có những loại trạng từ nào?
+    - Kind of adverb
+    - có nhiều loại trạng từ không?
+
+- intent: ask_adverb_of_place #  trạng từ chỉ nơi chốn
+  examples: |
+    - Trạng từ chỉ nới chốn là gì?
+    - Trạng từ chỉ nơi chốn?
+    - Trạng từ về địa điểm trong tiếng Anh?
+    - adverb of place
+
+
+- intent: ask_adverb_of_degree #  Trạng từ chỉ mức độ
+  examples: |
+    - adverb of degree
+    - trạng từ chỉ mức độ là gì?
+    - trạng từ chỉ múc độ
+    - ví dụ về trạng từ chỉ mức độ?
+    - giới thiệu về trạng từ chỉ mức độ
+
+- intent: ask_adverb_of_time #  Trạng từ chỉ thời gian
+  examples: |
+    - Trạng từ chỉ thời gian
+    - adverb time
+    - adverb of time
+    - Thế nào là trạng từ chỉ thời gian
+    - Khái niệm về trạng từ chỉ thời gian
+    - giới thiệu về trạng từ chỉ thời gian
+
+- intent: ask_adverb_of_manner #  Trạng từ chỉ cách thức
+  examples: |
+    - trạng từ chỉ cách thức
+    - adverb manner
+    - Khái niệm vể trạng từ chỉ cách thức
+    - Giới thiệu về trạng từ chỉ cách thức
+    - Thế nào là trạng từ chỉ cách thức?
+    - adverb of manner in English
+
+- intent: ask_adverb_of_frequency #  Trạng từ chỉ tần suất
+  examples: |
+    - adverb of frequency
+    - Thế nào là trạng từ chỉ thời gian
+    - Giới thiệu về trạng từ chỉ thời gian
+    - Trạng từ chỉ thời gian
+    - Khái niệm về trạng từ chỉ thời gian
+    - adverb frequency
+
+
+# Lượng từ(quantities)
+- intent: ask_quantities #lượng từ
+  examples: |
+    - Lượng từ trong tiếng Anh là gì?
+    - Khái niệm lượng từ trong tiếng Anh là gì?
+    - Thế nào là quantities?
+    - Tìm hiểu về quantities trong tiếng Anh?
+
+- intent: ask_quantities_few_and_a_few #lượng từ (few và a few)
+  examples: |
+    - few là gì?
+    - a few là gì?
+    - few và a few là gì?
+    - Cách dùng few và a few?
+    - Dùng a few và few như thế nào?
+    - Phân biệt few và a few
+
+- intent: ask_quantities_some_and_any #lượng từ (some và any)
+  examples: |
+    - Cách dùng some và any?
+    - some và any?
+    - phân biệt some và any?
+    - Dùng some và any như thế nào?
+
+- intent: ask_quantities_much_and_many #lượng từ (much và many)
+  examples: |
+    - many và much
+    - Cách dùng many và much
+    - Phân biệt many và much
+    - Dùng many và much như thế nào?
+  
+- intent: ask_quantities_little_and_a_little #lượng từ (little và a little)
+  examples: |
+    - little và a little
+    - Cách dùng little và a little
+    - Dùng little và a little như thế nào?
+    - Phân biệt little và a little
+    - little và a little là gì
+
+# Giới từ
+
+- intent: ask_preposition #giới từ
+  examples: | 
+    - Giới từ trong tiếng Anh
+    - Khái niệm về giới từ
+    - Giới từ là gì?
+    - Thế nào là giới từ?
+    - preposition là gì?
+
+- intent: ask_preposition_of_place #giới từ chỉ vị trí
+  examples: |
+    - giới từ vị trí
+    - giới từ vị trí là gì
+    - Khái niệm về giới từ chỉ vị trí?
+    - preposition of place
+    - Tìm hiểu về preposition of place
+
+- intent: ask_preposition_of_time #giới từ chỉ thời gian
+  examples: |
+    - giới từ chỉ thời gian là gì?
+    - giới từ chỉ thời gian
+    - Tìm hiểu về giới từ chỉ thời gian
+    - Khái niệm về giới từ chỉ thời gian
+    - Tìm hiểu preposition of time
+
+- intent: ask_preposition_of_direction #giới từ chỉ phương hướng
+  examples: |
+    - Thế nào là giới từ chỉ phương hướng
+    - Khái niệm về giới từ chỉ phương hướng
+    - giới từ chỉ phương hướng
+    - Tìm hiểu về preposition of direction
+
+#Mạo từ  (article)
+
+- intent: ask_article #mạo từ
+  examples: |
+    - Mạo từ trong tiếng Anh là gì?
+    - Thế nào là mạo từ?
+    - Mạo từ?
+    - Khái niệm về mạo từ?
+    - article in English?
+
+#Liên từ (conjunctions)
+
+- intent: ask_conjunctions # liên từ
+  examples: |
+    - Liên từ là gì?
+    - Conjunctions là gì?
+    - Tìm hiểu vè liên từ trong tiếng Anh?
+    - Thế nào là liên từ?
+    - Khái niện Liên từ?
+    - Conjunctions in English
+
+- intent: ask_conjunctions_subordinating # liên từ phụ thuộc
+  examples: |

@@ -26,6 +26,29 @@ intents:
   - ask_noun
   - ask_adjective
   - ask_verb
+  #trạng từ (adverb)
+  - ask_adverb
+  - ask_kind_of_adverb
+  - ask_adverb_of_place 
+  - ask_adverb_of_degree
+  - ask_adverb_of_time
+  - ask_adverb_of_manner
+  - ask_adverb_of_frequency
+  # lượng từ (quantities)
+  - ask_quantities
+  - ask_quantities_few_and_a_few
+  - ask_quantities_some_and_any
+  - ask_quantities_much_and_many
+  - ask_quantities_little_and_a_little
+  # Giới từ (preposition)
+  - ask_preposition
+  - ask_preposition_of_place
+  - ask_preposition_of_time
+  - ask_preposition_of_direction
+  # mạo từ (article)
+  - ask_article
+  # liên từ (conjunctions)
+  - ask_conjunctions
 responses:
   utter_greets:
   - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
@@ -96,6 +119,68 @@ responses:
   - text: "Tính từ là những từ được dùng để miêu tả tính chất của danh từ chỉ sự vật, hiện tượng mà nó nhắm đến. Tính từ thường đứng trước 1 danh từ trong câu và bổ nghĩa cho từ đó. \n Ví dụ: \n Katty is a beautiful girl: Katty là một cô gái xinh đẹp: → 'beautiful - xinh đẹp' miêu tả danh từ chỉ người 'Katty'.→ beautiful đứng trước danh từ girl, bổ nghĩa cho girl"
   utter_ask_verb:
   - text: "Động từ là 1 từ hoặc 1 cụm các từ chỉ ra hành động, trạng thái hoặc tình trạng của chủ ngữ trong câu. Động từ có thể được coi là thành phần cốt lõi nhất trong 1 câu. Động từ đứng sau chủ ngữ, sau các trạng từ chỉ tần suất và trước tân ngữ.\nVí dụ:\n My brother often eats apples for breakfast.\n→ Động từ 'eat' trong câu này đứng sau chủ ngữ 'my brother' và trạng từ chỉ tần suất 'often', đứng trước tân ngữ 'apples'"
+#Trạng từ
+  utter_ask_adverb:
+  - text: "Trạng từ trong tiếng Anh (Adverb) là các từ bổ sung thông tin về tính chất, đặc điểm, hoàn cảnh cho những từ loại khác. Trạng từ miêu tả như thế nào, ở đâu, khi nào, bằng cách nào và tới mức độ như thế nào của hành động."
+  
+  utter_ask_kind_of_adverb:
+  - text: "Các loại trạng từ trong tiếng Anh: \n Trạng từ chỉ nơi chốn (adverb of place)\nTrạng từ chỉ mức độ (adverb of degree\nTrạng từ chỉ thời gian (adverb of time)\n Trạng từ chỉ cách thức (adverb of manner) \nTrạng từ chỉ tần suất (adverb of frequency)"
+  
+  utter_ask_adverb_of_place:
+  - text: "Trạng từ chỉ nơi chốn diễn tả nơi các hành động xảy ra hoặc mô tả khái quát khoảng cách. Một số trạng từ chỉ nơi chốn thường gặp là: there, everywhere, somewhere, anywhere, inside, outside, away."
+  
+  utter_ask_adverb_of_degree:
+  - text: "Trạng từ chỉ mức độ diễn tả mức độ của hành động được nhắc đến. Các mức độ từ ít đến nhiều tương ứng với các trạng từ thường gặp là hardly (hầu như không), little (một ít), fully (hoàn toàn), very (rất),…"
+
+  utter_ask_adverb_of_time:
+  - text: "Trạng từ chỉ thời gian diễn tả thời gian xảy ra hành động. \n Ví dụ như các từ: early, now, soon, yesterday, finally, recently, already, lately,..."
+
+  utter_ask_adverb_of_manner:
+  - text: "Trạng từ chỉ cách thức diễn tả cách thức, phương thức mà hành động được diễn ra. Các trạng từ này thường xuất phát từ tính từ miêu tả được thêm đuôi -ly. \n Ví dụ: slowly, quickly, happily,...."
+  
+  utter_ask_adverb_of_frequency:
+  - text: "Trạng từ chỉ tần suất thể hiện mức độ xảy ra, xuất hiện và lặp lại của hành động trong câu. Các trạng từ chỉ tần suất thường gặp nhất là always, usually, often, sometimes, seldom, rarely, never,…."
+
+
+
+#Lượng từ
+  utter_ask_quantities:
+  - text: "Lượng từ trong tiếng Anh là những từ được sử dụng để chỉ lượng hay số lượng của danh từ trong câu. Lượng từ thường được đặt trước danh từ, ví dụ:/n a few books (một ít sách)/nmany friends (nhiều bạn bè)\nseveral days (một số ngày)\na little water (một chút nước)\nmuch money (nhiều tiền)\na lot of coffee (nhiều cà phê)"
+  
+  utter_ask_quantities_few_and_a_few:
+  - text: "Few và a few đứng trước danh từ đếm được đang ở dạng số nhiều. Few: rất ít, gần như không. A few: một vài, một số (tương đương với some). \n Few/A few + danh từ đếm được số nhiều + V (số nhiều)"
+  
+  utter_ask_quantities_some_and_any:
+  - text: "Some đi với danh từ đếm được có nghĩa là một vài. Some đi với danh từ không đếm được có nghĩa là một ít (trong câu khẳng định).\n Some + danh từ đếm được (dạng số nhiều) + V (số nhiều) \n Some + danh từ không đếm được + V (số ít) \n Any đi với danh từ đếm được số nhiều có nghĩa là một vài. Ani đi với danh từ không đếm được có nghĩa là một ít. Trong câu khẳng định, any có nghĩa là bất cứ cái gì/ai. \n Any + danh từ đếm được số nhiều + V (số nhiều)\n Any + danh từ không đếm được + V (số ít)"
+  
+  utter_ask_quantities_much_and_many:
+  - text: "Much/Many có nghĩa là nhiều, bao nhiêu. Much và many được sử dụng trong câu phủ định và câu nghi vấn. \n Many + dùng với danh từ số nhiều đếm được + V (số nhiều)\nMuch + dùng với danh từ không đếm được + V (số ít)"
+  
+  utter_ask_quantities_little_and_a_little:
+  - text: "Little và a little là những lượng từ đứng trước các danh từ không đếm được. Khi đó 2 từ này sẽ mang nghĩa là: A little: không nhiều nhưng đủ dùng và Little: gần như không có gì.\n Little/A little + danh từ không đếm được + V (số ít)"
+
+
+#Giới từ
+  utter_ask_preposition:
+  - text: "Giới từ là 1 trong những thành phần quan trọng tạo nên câu. Giới từ chỉ mối quan hệ giữa các người, vật được nhắc đến trong câu. Giới từ có thể nối động từ với danh từ, chủ ngữ với tân ngữ hay các thành phần khác. /nGiới từ hoàn toàn có thể quyết định ý nghĩa của cả câu. Tùy vào ý nghĩa sử dụng mà giới từ có thể được phân chia thành các loại như: giới từ chỉ vị trí, giới từ chỉ thời gian hay giới từ chỉ phương hướng."
+
+  utter_ask_preposition_of_place:
+  - text: "Giới từ chỉ vị trí, địa điểm nơi chốn làm rõ hơn thông tin về địa điểm được nói đến trong câu. Các giới từ chỉ địa điểm thông dụng nhất là: in, on, at, above, under,..."
+
+  utter_ask_preposition_of_time:
+  - text: "Giới từ chỉ thời gian làm rõ thông tin về thời điểm có liên quan hành động, sự vật được nhắc đến trong câu. Một số giới từ chỉ thời gian thông dụng nhất bạn sẽ bắt gặp là: on, at, in,..."
+
+  utter_ask_preposition_of_direction:
+  - text: "Giới từ chỉ phương hướng thông dụng mà bạn sẽ dùng thường xuyên trong tiếng Anh có thể kể đến như: to, along, cross, up, from,.."
+
+  #mao từ
+  utter_ask_article:
+  - text: " Mạo từ trong tiếng Anh được chia thành hai loại: the (mạo từ xác định) và a/an (mạo từ không xác định)."
+
+  #liên từ
+  utter_ask_conjunctions:
+  - text: "Liên từ trong tiếng Anh có chức năng dùng để liên kết các cụm từ, các câu hay các đoạn văn. Liên từ được dùng phổ biến trong cả giao tiếp thực tế và trong văn viết. Các loại liên từ chính bao gồm: Liên từ phụ thuộc, Liên từ kết hợp và Liên từ tương quan."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
